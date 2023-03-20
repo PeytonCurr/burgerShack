@@ -7,9 +7,9 @@ export class Burger {
         this.buns = data.buns
         this.meat = data.meat
         this.cheese = data.cheese
-        this.lettuce = data.lettuce || true
-        this.tomato = data.tomato || true
-        this.onion = data.onion || true
+        this.lettuce = data.lettuce != null ? data.lettuce : true
+        this.tomato = data.tomato != null ? data.lettuce : true
+        this.onion = data.onion != null ? data.lettuce : true
     }
 }
 
